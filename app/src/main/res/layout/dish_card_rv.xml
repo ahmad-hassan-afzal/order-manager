@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rv_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/order_total_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/cutom_pill"
+        android:fontFamily="@font/baloo_bhai"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:text="$ 7.99"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/category" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/order_type_thumb"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        app:civ_border_width="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.301" />
+
+    <TextView
+        android:id="@+id/cusName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/acme"
+        android:text="DishName"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/order_type_thumb"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/cus_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/acme"
+        android:text="ShortDesc"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/order_type_thumb"
+        app:layout_constraintTop_toBottomOf="@+id/cusName" />
+
+    <TextView
+        android:id="@+id/prod_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/acme"
+        android:text="ProdID"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/order_type_thumb"
+        app:layout_constraintTop_toBottomOf="@+id/category" />
+
+    <TextView
+        android:id="@+id/category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/acme"
+        android:text="Category: "
+        android:textColor="@color/teal_700"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/order_type_thumb"
+        app:layout_constraintTop_toBottomOf="@+id/cus_phone" />
+
+    <TextView
+        android:id="@+id/txt_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/acme"
+        android:text="ProductCategory"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/category"
+        app:layout_constraintTop_toBottomOf="@+id/cus_phone" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Restaurant Order App</string>
+    <string name="title_activity_product_manager">Restaurant Order App</string>
+
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_products">Products</string>
+    <string name="title_order">Orders</string>
+
+    <string-array name="user_roles">
+        <item>Manager</item>
+        <item>Waiter</item>
+    </string-array>
+
+</resources>
